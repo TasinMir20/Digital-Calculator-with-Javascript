@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.section-cont {
+    width: 100%;
+}
+
+.calclutor {
+    width: 305px;
+    overflow: hidden;
+    padding: 30px 15px;
+    background-color: #212121;
+    margin: 20px auto 0 auto;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.calclutor .input {
+    background-color: #e9f9fa;
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 30px;
+    border: 0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.calclutor .keyboard {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.calclutor .keyboard .lines button {
+    background-color: aqua;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 15px 20px;
+    height: 17%;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.calclutor .keyboard .lines button.dubble-size-btn {
+    height: 37%;
+}
+
+.calclutor .keyboard .lines .numbers {
+    background-color: #ffffff;
+    color: #212121;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+
+.calclutor .keyboard .lines .unary-calcluting,
+.calclutor .keyboard .lines .extra-calcluting {
+    background-color: #1a3c48;
+}
+
+.calclutor .keyboard .lines .equal {
+    background-color: #3b3d3d;
+}
+
+.calclutor .keyboard .lines .clear-btn {
+    background-color: #029494;
+}
+
+
+.calclutor .keyboard .lines .numbers:hover,
+.calclutor .keyboard .lines .unary-calcluting:hover,
+.calclutor .keyboard .lines .extra-calcluting:hover,
+.calclutor .keyboard .lines .equal:hover,
+.calclutor .keyboard .lines .clear-btn:hover {
+    color: #ffffff;
+    background-color: #4b595d;
+}
+
+/* Responsive CSS */
+
+@media all and (max-width: 330px) {
+    .calclutor {
+        width: 95%;
+    }
+}
